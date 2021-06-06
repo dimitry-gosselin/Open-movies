@@ -1,0 +1,67 @@
+#genre-page{
+    & > *{
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    @media (max-width: 1660px) {  
+        & > *{
+            margin: 20px 50px;
+            width: auto;
+        }
+    }
+
+    @media (max-width: 1300px) {  
+        .grid-4{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 33%);
+        }
+    }
+
+    @media (max-width: 1000px) {  
+        .grid-4{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 50%);
+        }
+    }
+
+    @media (max-width: 700px) {  
+        .grid-4{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 100%);
+        }
+    }
+
+
+    .movie-list{
+
+        .movie-block:nth-child(4n+1){
+            padding-left: 0;
+        }
+
+        .movie-block:nth-child(4n){
+            padding-right: 0;
+        }
+
+        .movie-block {
+            margin-bottom: 50px;
+            // padding: 0 15px;
+
+            .movie-panel{
+                width: 260px;
+                display: inline-block;
+
+                .poster{
+                    height: 390px;
+                    text-align: center;
+        
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
