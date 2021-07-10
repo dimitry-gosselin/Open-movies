@@ -23,7 +23,7 @@ get_header();
                 $tmp = [];
                 if( $genres ){
                     foreach( $genres as $genre ){
-                        $tmp[] = get_field('titre', $genre->ID);
+                        $tmp[] = "<a href='".get_permalink($genre->ID)."'>".get_field('titre', $genre->ID)."</a>";
                     }
                 }
             ?>

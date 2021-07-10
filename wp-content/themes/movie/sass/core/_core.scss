@@ -27,16 +27,24 @@ h1{
 .flx{
     display: flex;
 
-    *{
+    & > *{
         flex-grow: 1;
     }
 }
 
 .grid-4{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 25%);
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between; 
+
+    
+    &:after {
+        content: "";
+        flex: auto;
+    }
+  
 }
 
 .grid-5{
-    grid-template-columns: repeat(auto-fill, 20%);
+    // grid-template-columns: repeat(auto-fill, 20%);
 }

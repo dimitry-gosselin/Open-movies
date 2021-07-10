@@ -8,5 +8,9 @@
 
     .fiche-movie{
         margin: 20px 50px;
+
+        a{
+            text-transform: unset;
+        }
     }
 }
